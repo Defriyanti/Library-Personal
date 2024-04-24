@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defriyantisgr/Library</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            position: relative;
+            background-image: url('https://cdn.kibrispdr.org/data/12/background-perpustakaan-hd-32.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: maroon;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: brown;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff !important;
+            text-decoration: none !important;
+            padding: 0 15px;
+        }
+        nav a:hover {
+            background-color: black;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: salmon;
+            min-width: 150px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: whitesmoke;
+            padding: 10px 14px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .column {
+            flex: 1;
+            padding: 20px;
+            max-width: 400px;
+            margin: 10px;
+        }
+        th,td {
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding-bottom: 100px;
+                flex-direction: column;
+                align-items: center;
+
+            }
+            .column {
+                width: 100%;
+            }
+        }
+        @media (max-width: 576px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                display: block;
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 65px;">Perpustakaan SUKA BACA</h1>
+    </header>
+    <nav>
+        <div class="dropdown">
+            <a href="#">Beranda</a>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="index(5).html">Contact</a>
+            </div>
+        </div>
+        <a href="index(2).html">Cari Perpustakaan</a>
+        <a href="index(3).html">Form Keanggotaan</a>
+        <a href="index(4).html">Form perpustakaan</a>
+    </nav>
+    <div class="container">
+        <div class="column">
+            <h2 style="color: black; background-color: bisque; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px;">Selamat Datang di Website Perpustakaan SUKA BACA</h2>
+        </div>
+        <div class="column" style="color: white;">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Judul Buku</th>
+                        <th>Pengarang</th>
+                        <th>Tahun Terbit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Is It Bad or Good Habits</td>
+                        <td>Sabrina Ara</td>
+                        <td>2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="column" style="color: black; background-color: whitesmoke;">
+            <form>
+                <div class="form-group">
+                    <label for="judul">Nama:</label>
+                    <input type="text" class="form-control" id="Nama">
+                </div>
+                <div class="form-group">
+                    <label for="pengarang">ID Anggota:</label>
+                    <input type="text" class="form-control" id="ID_Anggota">
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+    <footer style="background-color: maroon; color: white; text-align: center; padding: 10px; position: absolute; width: 100%; bottom: 0;">
+        &copy; 2024 Defriyanti Sigiro. Perpustakaan SUKA BACA
+    </footer>
+</body>
+</html>
